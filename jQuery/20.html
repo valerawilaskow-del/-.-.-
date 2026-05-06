@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery-4.0.0.min (1).js"></script>
+	</head>
+	<body>
+<a href="#">Эта ссылка станет красной</a>
+<div>Блок</div>
+<a href="#">И эта тоже</a>
+
+<p>Первый абзац (не затронут)</p>
+<p>Второй абзац (станет красным)</p>
+<p>Третий абзац (тоже станет красным)</p>
+
+<ul>
+  <li class="www">Пункт с классом www</li>
+  <li>Этот пункт станет красным</li>
+  <li>А этот — нет (не следует сразу за .www)</li>
+</ul>
+		<script>
+$('h2 ~ a').css('color', 'red');
+
+$('p + p').css('color', 'red');
+
+$('li.www + li').css('color', 'red');
+        </script>
+	</body>
+</html>

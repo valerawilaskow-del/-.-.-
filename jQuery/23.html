@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery-4.0.0.min (1).js"></script>
+	</head>
+	<body>
+<h1 class="zzz">Заголовок 1 (красный)</h1>
+<h3 class="example zzz">Заголовок 3 (красный)</h3>
+<p>Текст</p>
+<h2>Заголовок без класса</h2>
+<h2 class="test">Не станет красным</h2>
+		<script>
+$(':header').css('color', 'red');
+
+$(':header.zzz').css('color', 'red');
+
+$(':header + :header').css('color', 'red');
+
+$(':header.test + :header.test').css('color', 'red');
+        </script>
+	</body>
+</html>

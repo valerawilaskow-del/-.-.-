@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery-4.0.0.min (1).js"></script>
+	</head>
+	<body>
+<h2>Заголовок с <i>курсивом</i></h2>
+
+<h2>Заголовок с <span><i>вложенным курсивом</i></span></h2>
+
+<h2>Заголовок <em><strong><i>глубоко вложенный курсив</i></strong></em></h2>
+
+<h2>Заголовок с <i>курсивом прямо внутри</i></h2>
+
+<h2><i>Курсив в начале</i> продолжение заголовка</h2>
+		<script>
+
+$('h2:has(i)').css('color', 'red');
+
+$('h2:has(> i)').css('color', 'red');
+
+        </script>
+	</body>
+</html>
