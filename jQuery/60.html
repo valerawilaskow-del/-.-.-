@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery.js"></script>
+</head>
+<body>
+
+  <h2>Заголовок 1</h2>
+  <h2>Заголовок 2</h2>
+  <h2>Заголовок 3</h2>
+
+  <script>
+    // №1
+    $('h2').each(function() {
+      $(this).replaceWith($(this).html())
+    })
+
+    // №2
+    $('h2').each(function() {
+      $(this).replaceWith('<p>' + $(this).html() + '</p>')
+    })
+  </script>
+
+</body>
+</html>

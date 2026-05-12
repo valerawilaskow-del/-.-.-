@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery.js"></script>
+  <style>
+    div { margin: 10px; padding: 5px; border: 2px solid green; }
+    #wrapper { border-color: blueviolet; }
+  </style>
+</head>
+<body>
+
+  <div id="wrapper">
+    <div id="test">text</div>
+  </div>
+  <p id="one"></p>
+  <p id="two"></p>
+  <p id="three"></p>
+  <p id="four"></p>
+
+  <script>
+    $('#one').text('width: ' + $('#wrapper').width() + ', height: ' + $('#wrapper').height())
+    $('#two').text('innerWidth: ' + $('#wrapper').innerWidth() + ', innerHeight: ' + $('#wrapper').innerHeight())
+    $('#three').text('outerWidth: ' + $('#wrapper').outerWidth() + ', outerHeight: ' + $('#wrapper').outerHeight())
+    $('#four').text('outerWidth(true): ' + $('#wrapper').outerWidth(true) + ', outerHeight(true): ' + $('#wrapper').outerHeight(true))
+  </script>
+
+</body>
+</html>

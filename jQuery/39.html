@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="jquery-4.0.0.min.js"></script>
+</head>
+
+<body>
+    <input type="checkbox" checked> Яблоко
+    <input type="checkbox"> Банан
+    <input type="checkbox" checked> Груша
+
+    <button id="task1">Снять все</button>
+    <button id="task2">Отметить все</button>
+    <button id="task3">Инверсия</button>
+    <script>
+        $('#task1').click(function () {
+            $('input[type="checkbox"]').prop('checked', false);
+        });
+
+        $('#task2').click(function () {
+            $('input[type="checkbox"]').prop('checked', true);
+        });
+
+        $('#task3').click(function () {
+            $('input[type="checkbox"]').prop('checked', function (i, value) {
+                return !value;
+            });
+        });
+    </script>
+</body>
+
+</html>

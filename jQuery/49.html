@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery-4.0.0.min.js"></script>
+	</head>
+	<body>
+		<div><p class="www">text</p></div>
+        <div><p class="www">text</p></div>
+        <div><p class="www">text</p></div>
+        <div><p>text</p></div>
+
+        <p><span class="hig">texth</span></p>
+        <p>text <span>e text</span> i text</p>
+        <div><span>not text</span></div>
+
+	</body>
+    <script>
+        //1
+        $('.www').unwrap().css('color', 'blue');
+        //2
+        $('.hig').unwrap().css('color', 'red');
+    </script>
+</html>

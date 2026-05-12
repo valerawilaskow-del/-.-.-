@@ -3,19 +3,17 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<script src="jquery-4.0.0.min (1).js"></script>
+		<script src="jquery-4.0.0.min.js"></script>
 	</head>
 	<body>
-<p id="aaa">text1</p>
-<p id="bbb">text2</p>
-<p id="ccc">text3</p>
-
-		<script>
-$('p').map(function(index) {
-  this.id = index;
-  return this;
-}).get();
-
-        </script>
+		<p id="aaa">txt1</p>
+        <p id="bbb">txt2</p>
+        <p id="ccc">txt3</p>
 	</body>
+    <script>
+        $('p').map(function(index) {
+    $(this).attr('id', 'p' + (index + 1));
+    return $(this);
+}).get();
+    </script>
 </html>

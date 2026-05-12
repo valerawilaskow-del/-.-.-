@@ -3,16 +3,21 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<script src="jquery-4.0.0.min (1).js"></script>
+		<script src="jquery-4.0.0.min.js"></script>
 	</head>
 	<body>
-<p></p>
-<p class="empty"></p>
-<p>Текст внутри</p>
+		<p>Текст абзаца</p>
+        <p></p>
+        <p>текст</p>
 
-		<script>
-$('p:empty').css('color', 'red');
-
-        </script>
+        <div>div</div>
+        <div></div>
+        <div>div</div>
 	</body>
+    <script>
+        //1
+        $('p:empty').css('color', 'red');
+        //2
+        $('div:not(:empty)').css('color', 'red');
+    </script>
 </html>

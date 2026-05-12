@@ -3,22 +3,27 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<script src="jquery-4.0.0.min (1).js"></script>
+		<script src="jquery-4.0.0.min.js"></script>
 	</head>
 	<body>
-<h1 class="zzz">Заголовок 1 (красный)</h1>
-<h3 class="example zzz">Заголовок 3 (красный)</h3>
-<p>Текст</p>
-<h2>Заголовок без класса</h2>
-<h2 class="test">Не станет красным</h2>
-		<script>
-$(':header').css('color', 'red');
+        <h1>перв ур</h1>
+        <h2>красным</h2>
+        <p>параграф</p>
+        <h3>нет</h3>
 
-$(':header.zzz').css('color', 'red');
-
-$(':header + :header').css('color', 'red');
-
-$(':header.test + :header.test').css('color', 'red');
-        </script>
+		<h2 class="test">test</h2>
+        <h3 class="test">крас</h3>
+        <h4 class="other">
+        <h5 class="test">нет</h5>
 	</body>
+    <script>
+        //1
+        $(':header').css('color', 'red');
+        //2
+        $(':header.zzz').css('color', 'red');
+        //3
+        $(':header + :header').css('color', 'red');
+        //4
+        $('.test:header + .test:header').css('color', 'red');
+    </script>
 </html>
