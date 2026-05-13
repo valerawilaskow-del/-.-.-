@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery-4.0.0.min.js"></script>
+</head>
+<body>
+
+  <b class="www test">Текст 1</b>
+  <b class="www">Текст 2</b>
+  <b class="www test">Текст 3</b>
+
+  <p class="www">Абзац 1</p>
+  <p>Абзац 2</p>
+  <p class="www">Абзац 3</p>
+  <span class="www">Спан 1</span>
+
+  <script>
+    // №1 — все b.www → красные, затем среди них .test → fontSize 30px
+    $('b.www').css('color', 'red')
+              .filter('.test').css('fontSize', '30px');
+
+    // №2 — все .www → красные, затем среди них p → добавить '!'
+    $('.www').css('color', 'red')
+             .filter('p').each(function() {
+               $(this).text($(this).text() + '!');
+             });
+  </script>
+
+</body>
+</html>

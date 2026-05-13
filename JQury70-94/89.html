@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery-4.0.0.min.js"></script>
+</head>
+<body>
+
+  <ul>
+    <li>Элемент 1</li>
+    <li class="www">Элемент 2</li>
+    <li>Элемент 3</li>
+  </ul>
+
+  <script>
+    $('li.www').parent()
+               .addBack()
+               .css('color', 'red');
+  </script>
+
+</body>
+</html>

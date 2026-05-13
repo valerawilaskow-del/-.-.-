@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script src="jquery-4.0.0.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+  <p>Обычный параграф</p>
+  <span class="www">Span с классом www</span>
+  <div>
+    <b>Жирный текст 1</b>
+    <p>Ещё параграф</p>
+    <div class="test">
+      <b>Жирный текст 2</b>
+      <span>Обычный span</span>
+    </div>
+  </div>
+  <div class="test">
+    <b>Жирный текст 3</b>
+  </div>
+</div>
+
+	<script>
+$('.www').parent().css('color', 'red');
+
+	</script>
+</body>
+</html>

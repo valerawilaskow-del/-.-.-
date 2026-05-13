@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery-4.0.0.min (1).js"></script>
+	</head>
+	<body>
+<ul>
+<a href="/home" title="Главная">Главная</a>
+</ul>
+		<script>
+$('a').each(function() {
+  var text = $(this).text();
+  $(this).attr('title', text);
+});
+        </script>
+	</body>
+</html>
