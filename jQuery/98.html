@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery.js"></script>
+</head>
+<body>
+
+  <h3>Задача 1 — дописать href при наведении</h3>
+  <a href="https://google.com">Google</a><br>
+  <a href="https://youtube.com">YouTube</a><br>
+  <a href="https://github.com">GitHub</a>
+
+  <h3>Задача 2 — вывести value при потере фокуса</h3>
+  <input type="text" placeholder="Первый"><br>
+  <input type="text" placeholder="Второй"><br>
+  <input type="text" placeholder="Третий"><br>
+  <p id="test"></p>
+
+  <script>
+    // Задача 1
+    document.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('mouseenter', function() {
+        var href = a.getAttribute('href');
+        var text = a.textContent;
+        a.textContent = text + ' (' + href + ')';
+      });
+    });
+
+    // Задача 2
+    document.querySelectorAll('input').forEach(function(input) {
+      input.addEventListener('blur', function() {
+        document.querySelector('#test').textContent = input.value;
+      });
+    });
+  </script>
+
+</body>
+</html>

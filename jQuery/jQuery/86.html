@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery.js"></script>
+</head>
+<body>
+
+  <div id="text"><i>text1</i> <b>text2</b> text3 text4</div>
+
+  <script>
+    const $contents = $('#text').contents();
+    console.log($contents); // i, b и текстовые узлы
+  </script>
+
+</body>
+</html>

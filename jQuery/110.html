@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="task1">Задача 1</div>
+  <div id="task2">Задача 2</div>
+  <div id="task3">Задача 3</div>
+  <div id="task4">Задача 4</div>
+
+  <script>
+    // Задача 1 — ширина до 200px за 1100мс (один раз)
+    $('#task1').one('click', function() {
+      $(this).animate({ width: '200px' }, 1100);
+    });
+
+    // Задача 2 — ширина +200px при каждом клике за 900мс
+    $('#task2').on('click', function() {
+      $(this).animate({ width: '+=200px' }, 900);
+    });
+
+    // Задача 3 — ширина и высота +100px при каждом клике за 950мс
+    $('#task3').on('click', function() {
+      $(this).animate({ width: '+=100px', height: '+=100px' }, 950);
+    });
+
+    // Задача 4 — перемещение вправо на 100px при каждом клике за 700мс
+    $('#task4').css('position', 'relative');
+    $('#task4').on('click', function() {
+      $(this).animate({ left: '+=100px' }, 700);
+    });
+  </script>
+
+</body>
+</html>

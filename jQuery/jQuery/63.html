@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery.js"></script>
+</head>
+<body>
+
+  <p id="test">Этот абзац будет перемещён</p>
+  <h3>Заголовок</h3>
+
+  <script>
+    const elem = $('p#test').detach()
+    $('h3').before(elem)
+  </script>
+
+</body>
+</html>

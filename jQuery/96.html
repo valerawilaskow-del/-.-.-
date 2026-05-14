@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery.js"></script>
+</head>
+<body>
+
+  <h3>Задача 1 — добавить '?' в начало</h3>
+  <ul id="list1">
+    <li>Первый</li>
+    <li>Второй</li>
+    <li>Третий</li>
+  </ul>
+
+  <h3>Задача 2 — вывести содержимое абзаца</h3>
+  <p class="task2">Первый абзац</p>
+  <p class="task2">Второй абзац</p>
+  <p class="task2">Третий абзац</p>
+  <div id="output"></div>
+
+  <h3>Задача 3 — показать квадрат числа</h3>
+  <p class="task3">3</p>
+  <p class="task3">7</p>
+  <p class="task3">12</p>
+
+  <script>
+    // Задача 1
+    $('#list1 li').on('click', function() {
+      var text = $(this).text();
+      $(this).text('?' + text);
+    });
+
+    // Задача 2
+    $('.task2').on('click', function() {
+      $('#output').text('Содержимое: ' + $(this).text());
+    });
+
+    // Задача 3
+    $('.task3').on('click', function() {
+      var n = parseInt($(this).text());
+      $(this).text(n * n);
+    });
+  </script>
+
+</body>
+</html>

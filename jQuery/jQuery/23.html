@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery-4.0.0.min.js"></script>
+	</head>
+	<body>
+        <h1>перв ур</h1>
+        <h2>красным</h2>
+        <p>параграф</p>
+        <h3>нет</h3>
+
+		<h2 class="test">test</h2>
+        <h3 class="test">крас</h3>
+        <h4 class="other">
+        <h5 class="test">нет</h5>
+	</body>
+    <script>
+        //1
+        $(':header').css('color', 'red');
+        //2
+        $(':header.zzz').css('color', 'red');
+        //3
+        $(':header + :header').css('color', 'red');
+        //4
+        $('.test:header + .test:header').css('color', 'red');
+    </script>
+</html>

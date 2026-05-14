@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="jquery.js"></script>
+</head>
+<body>
+
+  <h2 class="www">Заголовок 1</h2>
+  <h2 class="www test">Заголовок 2</h2>
+  <h2 class="www">Заголовок 3</h2>
+  <h2 class="www test">Заголовок 4</h2>
+
+  <script>
+    $('h2.www').css('color', 'red')
+               .filter('.test').css('fontSize', '30px');
+  </script>
+
+</body>
+</html>

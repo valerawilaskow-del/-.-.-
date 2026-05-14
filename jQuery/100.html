@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script src="jquery.js"></script>
+</head>
+<body>
+
+  <h3>Задача 1 — делегирование на ul</h3>
+  <ul id="myList">
+    <li>Первый</li>
+    <li>Второй</li>
+    <li>Третий</li>
+  </ul>
+  <button id="addBtn">Добавить пункт</button>
+
+  <h3>Задача 2 — делегирование на table</h3>
+  <table id="myTable" border="1" cellpadding="6">
+    <thead>
+      <tr><th>Имя</th><th>Фамилия</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Иван</td><td>Иванов</td></tr>
+      <tr><td>Пётр</td><td>Петров</td></tr>
+      <tr><td>Мария</td><td>Сидорова</td></tr>
+    </tbody>
+  </table>
+  <br>
+  <input id="firstName" type="text" placeholder="Имя">
+  <input id="lastName" type="text" placeholder="Фамилия">
+  <button id="addRow">Добавить юзера</button>
+
+  <script>
+    // Задача 1
+    document.getElementById('myList').addEventListener('click', function(e) {
+      if (e.target.tagName === 'LI') {
+        e.target.textContent = e.target.textContent + '!';
+      }
+    });
+
+    document.getElementById('addBtn').addEventListener('click', function() {
+      var li = document.createElement('li');
+      li.textContent = 'пункт';
+      document.getElementById('myList').appendChild(li);
+    });
+
+    // Задача 2
+    document.getElementById('myTable').addEventListener('click', function(e) {
+      if (e.target.tagName === 'TD') {
+        var newText = prompt('Изменить текст:', e.target.textContent);
+        if (newText !== null) {
+          e.target.textContent = newText;
+        }
+      }
+    });
+
+    document.getElementById('addRow').addEventListener('click', function() {
+      var firstName = document.getElementById('firstName').value;
+      var lastName = document.getElementById('lastName').value;
+      if (!firstName || !lastName) return;
+
+      var tr = document.createElement('tr');
+      tr.innerHTML = '<td>' + firstName + '</td><td>' + lastName + '</td>';
+      document.querySelector('#myTable tbody').appendChild(tr);
+
+      document.getElementById('firstName').value = '';
+      document.getElementById('lastName').value = '';
+    });
+  </script>
+
+</body>
+</html>
