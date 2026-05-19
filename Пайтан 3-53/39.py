@@ -1,0 +1,8 @@
+tst = list('abcde')
+print(tst)
+tst = list('a12b')
+print(tst)
+tst = list(5678)
+print(tst)
+tst = list('4321')
+print(tst)
