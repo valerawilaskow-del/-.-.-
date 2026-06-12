@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог игр — GameSadyg</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-icon">▶</span> GameSadyg
+      </a>
+      <nav class="header__nav">
+        <a href="index.html" class="header__nav-link">Главная</a>
+        <a href="profile.html" class="header__nav-link">Кабинет</a>
+        <a href="login.html" class="btn btn--primary">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1 class="section__title section__title--left" style="margin:40px 0 20px;">Каталог игр</h1>
+
+    <input type="checkbox" id="filter-toggle" class="visually-hidden">
+    <label for="filter-toggle" class="catalog__filter-toggle">☰ Фильтр по жанрам</label>
+
+    <div class="catalog">
+      <!-- Фильтр -->
+      <aside class="catalog__filter">
+        <h3 class="catalog__filter-title">Жанры</h3>
+        <div class="catalog__filter-list">
+          <label class="catalog__filter-item"><input type="checkbox"> Экшен</label>
+          <label class="catalog__filter-item"><input type="checkbox"> RPG</label>
+          <label class="catalog__filter-item"><input type="checkbox"> Шутер</label>
+          <label class="catalog__filter-item"><input type="checkbox"> Стратегия</label>
+          <label class="catalog__filter-item"><input type="checkbox"> Симулятор</label>
+          <label class="catalog__filter-item"><input type="checkbox"> Спорт</label>
+          <label class="catalog__filter-item"><input type="checkbox"> Приключения</label>
+          <label class="catalog__filter-item"><input type="checkbox"> Инди</label>
+        </div>
+      </aside>
+
+      <!-- Карточки -->
+      <section class="catalog__games">
+        <article class="game-card"><div class="game-card__image" style="background:linear-gradient(135deg,#6366f1,#1e2550);"></div><div class="game-card__body"><h3 class="game-card__title">Cyber Legends 2077</h3><p class="game-card__meta">RPG · CD Projekt</p><div class="game-card__rating">★★★★★</div><div class="game-card__footer"><span class="game-card__price">1 999 ₽</span><a href="#" class="game-card__btn">Подробнее</a></div></div></article>
+        <article class="game-card"><div class="game-card__image" style="background:linear-gradient(135deg,#00d9ff,#1e2550);"></div><div class="game-card__body"><h3 class="game-card__title">Dragon Quest: Rebirth</h3><p class="game-card__meta">RPG · Square Enix</p><div class="game-card__rating">★★★★☆</div><div class="game-card__footer"><span class="game-card__price">2 499 ₽</span><a href="#" class="game-card__btn">Подробнее</a></div></div></article>
+        <article class="game-card"><div class="game-card__image" style="background:linear-gradient(135deg,#f59e0b,#1e2550);"></div><div class="game-card__body"><h3 class="game-card__title">Galaxy Warriors</h3><p class="game-card__meta">Экшен · Blizzard</p><div class="game-card__rating">★★★★★</div><div class="game-card__footer"><span class="game-card__price">1 299 ₽</span><a href="#" class="game-card__btn">Подробнее</a></div></div></article>
+        <article class="game-card"><div class="game-card__image" style="background:linear-gradient(135deg,#ef4444,#1e2550);"></div><div class="game-card__body"><h3 class="game-card__title">Shadow Strike</h3><p class="game-card__meta">Шутер · Ubisoft</p><div class="game-card__rating">★★★★☆</div><div class="game-card__footer"><span class="game-card__price">999 ₽</span><a href="#" class="game-card__btn">Подробнее</a></div></div></article>
+        <article class="game-card"><div class="game-card__image" style="background:linear-gradient(135deg,#10b981,#1e2550);"></div><div class="game-card__body"><h3 class="game-card__title">Empire Builder</h3><p class="game-card__meta">Стратегия · EA</p><div class="game-card__rating">★★★★★</div><div class="game-card__footer"><span class="game-card__price">1 799 ₽</span><a href="#" class="game-card__btn">Подробнее</a></div></div></article>
+        <article class="game-card"><div class="game-card__image" style="background:linear-gradient(135deg,#8b5cf6,#1e2550);"></div><div class="game-card__body"><h3 class="game-card__title">Mystic Lands</h3><p class="game-card__meta">Приключения · Bethesda</p><div class="game-card__rating">★★★★★</div><div class="game-card__footer"><span class="game-card__price">2 199 ₽</span><a href="#" class="game-card__btn">Подробнее</a></div></div></article>
+      </section>
+    </div>
+  </main>
+
+</body>
+</html>

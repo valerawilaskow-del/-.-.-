@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameSadyg — маркетплейс игр</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-icon">▶</span>
+        GameSadyg
+      </a>
+
+      <input type="checkbox" id="burger-toggle" class="header__burger-toggle visually-hidden">
+      <label for="burger-toggle" class="header__burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="header__nav">
+        <a href="#search" class="header__nav-link">Поиск</a>
+        <a href="catalog.html" class="header__nav-link">Каталог игр</a>
+        <a href="profile.html" class="header__nav-link">Личный кабинет</a>
+        <a href="login.html" class="btn btn--primary">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- SLIDER -->
+    <!-- PARTNERS -->
+<section class="section container">
+  <h2 class="section__title">Наши партнёры</h2>
+  <div class="partners">
+    <div class="partner-card">
+      <div class="partner-card__logo" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+        AVALON
+      </div>
+      <h3 class="partner-card__name">Avalon Studios</h3>
+      <p class="partner-card__desc">Крупная студия, известная разработкой мобильных игр и приложений</p>
+    </div>
+
+    <div class="partner-card">
+      <div class="partner-card__logo" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+        PLAYRIX
+      </div>
+      <h3 class="partner-card__name">Playrix</h3>
+      <p class="partner-card__desc">Международная студия, разработавшая Gardenscapes и Homescapes</p>
+    </div>
+
+    <div class="partner-card">
+      <div class="partner-card__logo" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+        BLIZZARD
+      </div>
+      <h3 class="partner-card__name">Blizzard Entertainment</h3>
+      <p class="partner-card__desc">Разработчик World of Warcraft, StarCraft, Diablo и Overwatch</p>
+    </div>
+
+    <div class="partner-card">
+      <div class="partner-card__logo" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+        EA GAMES
+      </div>
+      <h3 class="partner-card__name">Electronic Arts</h3>
+      <p class="partner-card__desc">Издатель серий FIFA, Battlefield, The Sims и Need for Speed</p>
+    </div>
+
+    <div class="partner-card">
+      <div class="partner-card__logo" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+        BITBOX
+      </div>
+      <h3 class="partner-card__name">Bitbox Studio</h3>
+      <p class="partner-card__desc">Молодая команда, создающая яркие и необычные компьютерные игры</p>
+    </div>
+
+    <div class="partner-card">
+      <div class="partner-card__logo" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+        LESTA
+      </div>
+      <h3 class="partner-card__name">Lesta Studio</h3>
+      <p class="partner-card__desc">Разработчик Warships.ru и исторических игр о Второй Мировой войне</p>
+    </div>
+
+    <div class="partner-card">
+      <div class="partner-card__logo" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #0a0e27;">
+        ICE-PICK
+      </div>
+      <h3 class="partner-card__name">Ice-Pick Lodge</h3>
+      <p class="partner-card__desc">Творческая студия, создатель "Мор. Утопия"</p>
+    </div>
+  </div>
+</section>
+        <div class="slider__dots">
+          <label for="slide1" class="slider__dot slider__dot--1"></label>
+          <label for="slide2" class="slider__dot slider__dot--2"></label>
+          <label for="slide3" class="slider__dot slider__dot--3"></label>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEARCH -->
+    <section id="search" class="section container">
+      <h2 class="section__title">Быстрый поиск по жанрам</h2>
+      <div class="search">
+        <form class="search__form" action="#" method="get">
+          <input type="text" class="search__input" placeholder="Введите жанр: экшен, RPG, шутер..." list="genres">
+          <datalist id="genres">
+            <option value="Экшен">
+            <option value="RPG">
+            <option value="Шутер">
+            <option value="Стратегия">
+            <option value="Симулятор">
+            <option value="Спорт">
+          </datalist>
+          <button type="submit" class="btn btn--primary">Найти</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section container">
+      <h2 class="section__title">Почему GameSadyg?</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature__icon">₽</div>
+          <h3 class="feature__title">Привлекательные цены</h3>
+          <p class="feature__text">Лучшие предложения на рынке цифровых игр</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">%</div>
+          <h3 class="feature__title">Ежемесячные акции</h3>
+          <p class="feature__text">Скидки до 80% на топовые проекты каждый месяц</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">☎</div>
+          <h3 class="feature__title">Круглосуточная поддержка</h3>
+          <p class="feature__text">Наши специалисты на связи 24/7 без выходных</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">⚡</div>
+          <h3 class="feature__title">Быстрая покупка</h3>
+          <p class="feature__text">Мгновенная доставка ключей после оплаты</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR GAMES -->
+    <section class="section container">
+      <h2 class="section__title">Популярные игры</h2>
+      <div class="games">
+        <article class="game-card">
+          <div class="game-card__image" style="background:linear-gradient(135deg,#6366f1,#1e2550);"></div>
+          <div class="game-card__body">
+            <h3 class="game-card__title">Cyber Legends 2077</h3>
+            <p class="game-card__meta">RPG · CD Projekt</p>
+            <div class="game-card__rating">★★★★★</div>
+            <div class="game-card__footer">
+              <span class="game-card__price">1 999 ₽</span>
+              <a href="catalog.html" class="game-card__btn">В каталог</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-card__image" style="background:linear-gradient(135deg,#00d9ff,#1e2550);"></div>
+          <div class="game-card__body">
+            <h3 class="game-card__title">Dragon Quest: Rebirth</h3>
+            <p class="game-card__meta">RPG · Square Enix</p>
+            <div class="game-card__rating">★★★★☆</div>
+            <div class="game-card__footer">
+              <span class="game-card__price">2 499 ₽</span>
+              <a href="catalog.html" class="game-card__btn">В каталог</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-card__image" style="background:linear-gradient(135deg,#f59e0b,#1e2550);"></div>
+          <div class="game-card__body">
+            <h3 class="game-card__title">Galaxy Warriors</h3>
+            <p class="game-card__meta">Экшен · Blizzard</p>
+            <div class="game-card__rating">★★★★★</div>
+            <div class="game-card__footer">
+              <span class="game-card__price">1 299 ₽</span>
+              <a href="catalog.html" class="game-card__btn">В каталог</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-card__image" style="background:linear-gradient(135deg,#ef4444,#1e2550);"></div>
+          <div class="game-card__body">
+            <h3 class="game-card__title">Shadow Strike</h3>
+            <p class="game-card__meta">Шутер · Ubisoft</p>
+            <div class="game-card__rating">★★★★☆</div>
+            <div class="game-card__footer">
+              <span class="game-card__price">999 ₽</span>
+              <a href="catalog.html" class="game-card__btn">В каталог</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-card__image" style="background:linear-gradient(135deg,#10b981,#1e2550);"></div>
+          <div class="game-card__body">
+            <h3 class="game-card__title">Empire Builder</h3>
+            <p class="game-card__meta">Стратегия · EA</p>
+            <div class="game-card__rating">★★★★★</div>
+            <div class="game-card__footer">
+              <span class="game-card__price">1 799 ₽</span>
+              <a href="catalog.html" class="game-card__btn">В каталог</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PARTNERS -->
+    <section class="section container">
+      <h2 class="section__title">Наши партнёры</h2>
+      <div class="partners">
+        <div class="partner">STEAM</div>
+        <div class="partner">EPIC GAMES</div>
+        <div class="partner">GOG.COM</div>
+        <div class="partner">ORIGIN</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__title">Контакты</h3>
+          <ul class="footer__list">
+            <li><a href="tel:83942230707" class="footer__link">8-394-223-07-07</a></li>
+            <li><a href="mailto:sadyg@games.ru" class="footer__link">sadyg@games.ru</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Информация</h3>
+          <ul class="footer__list">
+            <li><a href="#" class="footer__link">Клиентам</a></li>
+            <li><a href="#" class="footer__link">Партнерам</a></li>
+            <li><a href="#" class="footer__link">О нас</a></li>
+            <li><a href="#" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">Навигация</h3>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="register.html" class="footer__link">Регистрация</a></li>
+            <li><a href="login.html" class="footer__link">Авторизация</a></li>
+            <li><a href="profile.html" class="footer__link">Личный кабинет</a></li>
+            <li><a href="#search" class="footer__link">Поиск</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer__title">GameSadyg</h3>
+          <p style="color:var(--text-secondary);font-size:14px;">
+            Маркетплейс компьютерных игр и внутриигровых предметов.
+          </p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        © 2026 GameSadyg. Все права защищены.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
