@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Оформление заказа - Праздник в каждый дом</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body style="">
+<header>
+  <div class="container">
+      <div class="logo">
+          <h1><a href="index.html">Праздник в каждый дом</a></h1>
+      </div>
+      <nav>
+          <ul>
+              <li><a href="index.html">Акции</a></li>
+              <li><a href="seat.html">Наши локации</a></li>
+              <li><a href="index.html">Поиск</a></li>
+              <li><a href="booking.html">Управление бронированием</a></li>
+          </ul>
+      </nav>
+  </div>
+</header>
+<main class='container'>
+
+<h2>Оформление бронирования</h2>
+<article class="location-card">
+<p><strong>Локация:</strong> Сказочный лес<br/>
+<strong>Адрес:</strong> ул. Лесная, д. 5<br/>
+<strong>Дата:</strong> {{дата}} | <strong>Зона:</strong> Б | <strong>Стоимость:</strong> **64999 ₽** | <strong>Кол-во человек:</strong> до 35 | <strong>Итоговая стоимость:</strong> **64999 ₽** (за весь период)</p></div>
+</article>
+<h2>Дополнительные услуги:</h2>
+
+<form action='#' method='post'>
+    
+<fieldset style='background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 5px rgba(0,0,0,.1); width:1500px'>
+    
+<!-- Питание -->
+<label for='food'>Организация питания:
+<br/><select name='food' id='food' style='width:calc(100% - 22px);padding:8px;margin-top:6px;border-radius:4px;border:#ccc solid thin;' onchange='updateTotal()'>
+        <option value='' selected disabled hidden style='color:#999;'>Выберите вариант...</option>';
+        <option value='catering'>Кейтеринг (стандартное меню)</option>';
+        </select><br/>
+        Стоимость пакета услуг питания будет рассчитана автоматически.
+        </label><br/><br/>
+        
+         <!-- Аниматоры -->
+         <label for='animators' style='display:none;'><input type='checkbox' name='animators' id='animators' value='yes' style='margin-right:.7em;' onchange='updateTotal()'>Услуги аниматоров<br/>Стоимость пакета услуг аниматоров будет рассчитана автоматически.</label><br/><br/>
+         
+         <!-- Ведущий -->
+         <label for='host' style='display:none;'><input type='checkbox' name='host' id='host' value='yes' style='margin-right:.7em;' onchange='updateTotal()'>Услуги ведущего<br/>Стоимость пакета услуг ведущего будет рассчитана автоматически.</label><br/><br/>
+         
+         <!-- Детское такси -->
+         <label for='taxi' style='display:none;'><input type='checkbox' name='taxi' id='taxi' value='yes' style='margin-right:.7em;' onchange='updateTotal()'>Услуги детского такси<br/>Стоимость пакета услуг такси будет рассчитана автоматически.</label><br/><br/><br/>
+         
+         <!-- Комментарий к заказу -->
+         <label for='comment' style='display:none;'>Комментарий к заказу:</label><br />
+         <textarea name='comment' id='comment' rows='4' cols='64' style='width:calc(100% - 22px);padding:8px;margin-top:.6em;border-radius:.4em;border:#ccc solid thin;' placeholder='Особые пожелания...'></textarea><br /><br /><br />
+         
+         <!-- Email заказчика -->
+         <label for='email' style='display:none;'>Ваш Email:</label><br />
+         <input type='email' name='email' id='email' required placeholder='example@mail.ru'
+                style='width:calc(100% - 22px);padding:.6em .7em;margin-top:.6em;border-radius:.4em;border:#ccc solid thin;>
+         
+         <!-- Итоговая стоимость и кнопка оформления заказа -->
+         <div id='totalCostContainer'>
+             Итоговая стоимость к оплате:
+             <span id='totalCost'>64999 ₽</span>
+         </div><br />
+         
+         <button type='submit'>Оформить бронирование и оплатить онлайн</button>;
+     
+ </fieldset>
+</body>
+</html>

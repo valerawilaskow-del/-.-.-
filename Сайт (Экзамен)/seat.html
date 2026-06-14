@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Выбор зоны - Праздник в каждый дом</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/js/script.js"></script>
+</head>
+<body>
+<header>
+  <div class="container">
+      <div class="logo">
+          <h1><a href="index.html">Праздник в каждый дом</a></h1>
+      </div>
+      <nav>
+          <ul>
+               <li><a href="index.html">Акции</a></li>
+              <li><a href="seat.html">Наши локации</a></li>
+              <li><a href="index.html">Поиск</a></li>
+              <li><a href="booking.html">Управление бронированием</a></li>
+          </ul>
+      </nav>
+  </div>
+</header>
+<main class="container">
+   <h2>Выбор зоны в локации "Сказочный лес"</h2>
+       <div class="zones-info">
+           <h3 style="text-align: center;">Доступные зоны:</h3>
+           <ul id="zones-list">
+                <li data-zone-id='A'>
+                   Зона А (у окна):<br/>
+                   Площадь - 15 кв.м.,<br/> Вместимость - до 20 чел.<br/>
+                   Стоимость - **15 000 ₽/час**<br/>
+               </li>
+               <li data-zone-id='B'>
+                   Зона Б (в центре):<br/>
+                   Площадь - 25 кв.м.,<br/> Вместимость - до 35 чел.<br/>
+                   Стоимость - **20 000 ₽/час**<br/>
+               </li>
+           </ul>
+           <a id="proceedToBookingBtn" href="/booking.html?zone=B&price=20000" style="display:none; text-decoration:none; margin-top:25px;">
+               <button disabled>Перейти к бронированию выбранной зоны Б за **20 000 ₽/час**</button>
+           </a>
+       </div>
+   </div>
+
+
+
+</main>
+<footer class="container">
+   <div class="footer-links">
+       <center><a href="#">О нас</a> |
+       <a href="#">Контакты</a> |
+       <a href="#">Политика конфиденциальности</a></center>
+   </div>
+   <center><p>Телефон для справок и заказов:<br>8 (800) 222-35-35</p></center>
+</footer>
+</body>
+</html>

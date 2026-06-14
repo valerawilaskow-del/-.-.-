@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Праздник в каждый дом</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+      <div class="logo">
+          <h1>Праздник в каждый дом</h1>
+      </div>
+      <nav>
+          <ul>
+              <li><a href="#stocks">Акции</a></li>
+              <li><a href="seat.html">Наши локации</a></li>
+              <li><a href="#search">Поиск</a></li>
+              <li><a href="booking.html">Управление бронированием</a></li>
+          </ul>
+      </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- О компании -->
+  <section id="about">
+      <h2>О компании</h2>
+      <article class="location-card">
+      <p><strong>Цель:</strong> Сделать праздничные дни незабываемыми для детей и их родителей.</p>
+      <p><strong>Девиз:</strong> Подарим волшебство для Ваших детей!</p>
+      </article>
+  </section>
+  <section id="algorithm">
+      <h2>Как забронировать праздник?</h2>
+      <article class="location-card">
+      <ol>
+          <li>Выберите даты праздника;</li>
+          <li>Выберите количество участников;</li>
+          <li>Выберите желаемую локацию;</li>
+          <li>Зарезервируйте конкретную зону;</li>
+          <li>Определите перечень дополнительных услуг;</li>
+          <li>Оформите заказ.</li>
+      </ol>
+      </article>
+  </section>
+
+  <!-- Форма поиска -->
+  <section id="search">
+      <h2>Найдите идеальную локацию</h2>
+      <article class="location-card">
+      <form action="search.html" method="get">
+          <label for="region">Регион:
+          <select name="region" id="region" required>
+              <option value="">Выберите регион...</option>
+              <option value="msk">Москва и МО</option>
+              <option value="spb">Санкт-Петербург и ЛО</option>
+          </select>
+          </label>
+
+          <label for="date">Дата мероприятия:
+          <input type="date" name="date" id="date" required>
+          </label>
+            
+          <label for="adults">Взрослых:
+          <input type="number" name="adults" id="adults" min="0" max="50" value="0">
+          </label>
+
+          <label for="kids">Детей:
+          <input type="number" name="kids" id="kids" min="0" max="50" value="0">
+          </label>
+
+          <button type="submit">Поиск</button>
+      </form>
+      </article>
+  </section>
+
+  <!-- Акции -->
+  <section id="stocks">
+      <h2>Акции месяца</h2>
+      <div class="stocks-list">
+          <article class="stock-item">
+              <img src="css/img/2.jpg" style="border-radius:20px"  alt="Акция на торт" id="019ec4ef-54b9-7da2-9ac4-c3e213fdeaf6"></src>
+              <h3>Сладкий подарок!</h3>
+              <p>При заказе праздника от 3 часов — торт в подарок.</p>
+              <button>Подробнее об акции</button>
+          </article>
+          <!-- Добавь еще акции по аналогии -->
+      </div>
+  </section>
+
+  <!-- Подписка -->
+        <section id="reviews">
+        <div class="reviews">  
+          <h2>Отзывы клиентов:</h2>
+        <article class="location-card">
+        <blockquote><h4><img src="css/img/31.jpg" style="border-radius:20px" width="400px" height="200px"></h4>
+        <h5>"Аниматоры просто супер! Дети в восторге. Спасибо за организацию!" - Мария И.</h5>
+        </blockquote>
+        </article>
+        </div>
+        </section>
+        <section id="subscribe">
+      <h2>Подпишитесь на закрытые акции!</h2>
+      <form action="#" method="post">
+          <input type="email" name="email" placeholder="Ваш Email" required>
+          <button type="submit">Подписаться</button>
+      </form>
+  </section>
+
+</main>
+
+<footer class="container">
+   <div class="footer-links">
+       <center><a href="#">О нас</a> |
+       <a href="#">Контакты</a> |
+       <a href="#">Политика конфиденциальности</a></center>
+   </div>
+   <center><p>Телефон для справок и заказов:<br>8 (800) 222-35-35</p></center>
+</footer>
+
+</body>
+</html>
